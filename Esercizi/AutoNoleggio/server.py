@@ -24,7 +24,7 @@ def gestione_client(conn, addr):
             try:
                 giorni = int(giorni)
                 if giorni <= 0:
-                    risposta = "numeor di giorni non vaido"
+                    risposta = "numero di giorni non vaido"
                 else:
                     with lock:
                         if modello not in veicoli:
