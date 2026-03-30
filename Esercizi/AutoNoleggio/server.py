@@ -61,7 +61,7 @@ def gestione_client(conn, addr):
     conn.close()
                 
 def start_server():
-    server_socket = socket.socket(socket.AF.INET,socket.SOCK_STREAM)
+    server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     server_socket.bind(('localhost', 12345))
     server_socket.listen(5)
     
